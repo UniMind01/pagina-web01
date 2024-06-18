@@ -1,28 +1,25 @@
 body {
-    background: linear-gradient(to bottom, #3e0d5f, #4b0082); /* Colores estimados */
+    background: linear-gradient(to bottom, #3e0d5f, #4b0082);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(0, 0, 0); /* Color de texto específico para la página de inicio */
+    color: rgb(255, 255, 255); /* Texto blanco para el inicio */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Color de fondo para todas las páginas */
-    color: rgb(0, 0, 0); /* Color de texto */
+    background-color: #333;
 }
 
 body.index-page {
-    background-image: url('background.jpg'); /* Ruta relativa a la imagen de fondo */
+    background-image: url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(130, 129, 129); /* Color de texto específico para la página */
-    /* Otros estilos para el cuerpo */
+    color: rgb(255, 250, 250);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
 
 header {
     background-color: #333;
@@ -70,7 +67,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 350px; 
+    margin-top: 300px; /* Ajusta este valor según tus necesidades */
 }
 
 .intro-text {
@@ -105,43 +102,49 @@ button.register {
     color: white;
 }
 
-section.content {
-    text-align: center;
-    margin-top: 50px;
+button.anonymous {
+    background-color: #9e9e9e;
+    color: white;
 }
 
-section.content h1 {
-    font-size: 36px;
+.additional-info {
+    display: none; /* Oculta el texto adicional por defecto */
+    margin-top: 20px;
+    font-size: 16px; /* Tamaño de letra más grande */
+    /* Modifica esta línea para ajustar el tamaño de la letra según tus necesidades */
     color: #d8d8d8;
-}
-
-section.content p {
-    font-size: 18px;
-    color: #666;
 }
 
 /* Estilos para los modales */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
-    max-width: 500px; 
+    width: 80%;
+    max-width: 500px;
     border-radius: 10px;
+}
+
+.modal-content h2 {
+    color: black; /* Texto negro para el encabezado dentro del formulario */
+}
+
+.modal-content label, .modal-content input, .modal-content button {
+    color: black; /* Texto negro para los elementos del formulario */
 }
 
 .close {
@@ -156,4 +159,16 @@ section.content p {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.content {
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.video-container {
+    margin-top: 20px; /* Agrega espacio encima del contenedor de videos */
+}
+
+.video-container p {
+    margin-top: 10px; /* Agrega espacio encima del párrafo */
 }

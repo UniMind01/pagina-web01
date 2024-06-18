@@ -25,10 +25,14 @@
         <section class="intro">
             <div class="illustration-placeholder"></div>
             <div class="intro-text">
-                <p>Cuidar la salud mental y emocional es esencial para que tu <strong>UniMind</strong> florezca y te permita alcanzar un <strong>bienestar integral</strong> y una vida plena.</p>
+                <p>La vida universitaria puede ser estresante, con múltiples exigencias académicas, sociales y personales. En UniMind, creemos que buscar ayuda es un signo de fortaleza, y nuestra plataforma ofrece un espacio seguro y accesible donde los estudiantes pueden encontrar el apoyo que necesitan.</p>
                 <div class="buttons">
                     <button class="login" id="loginBtn">Iniciar sesión</button>
                     <button class="register" id="registerBtn">Registrarse</button>
+                    <button class="anonymous" id="anonymousBtn">Acceder como anónimo</button>
+                </div>
+                <div class="additional-info" id="additionalInfo">
+                    Cuidar la salud mental y emocional es esencial para que tu <strong>UniMind</strong> florezca y te permita alcanzar un <strong>bienestar integral</strong> y una vida plena.
                 </div>
             </div>
         </section>
@@ -44,7 +48,7 @@
                 <input type="text" id="username" name="username" required>
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit">Iniciar sesión</button>
+                <button type="submit" id="submitLogin">Iniciar sesión</button>
             </form>
         </div>
     </div>
@@ -59,7 +63,7 @@
                 <input type="text" id="new-username" name="new-username" required>
                 <label for="new-password">Contraseña:</label>
                 <input type="password" id="new-password" name="new-password" required>
-                <button type="submit">Registrarse</button>
+                <button type="submit" id="submitRegister">Registrarse</button>
             </form>
         </div>
     </div>

@@ -4,9 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var loginBtn = document.getElementById("loginBtn");
     var registerBtn = document.getElementById("registerBtn");
+    var anonymousBtn = document.getElementById("anonymousBtn");
 
     var closeLoginModal = document.getElementById("closeLoginModal");
     var closeRegisterModal = document.getElementById("closeRegisterModal");
+
+    var additionalInfo = document.getElementById("additionalInfo");
 
     loginBtn.onclick = function() {
         loginModal.style.display = "block";
@@ -31,5 +34,31 @@ document.addEventListener("DOMContentLoaded", function() {
         if (event.target == registerModal) {
             registerModal.style.display = "none";
         }
+    }
+
+    function showAdditionalInfo() {
+        loginBtn.style.display = "none";
+        registerBtn.style.display = "none";
+        anonymousBtn.style.display = "none";
+        additionalInfo.style.display = "block";
+    }
+
+    // Evento para el botón "Acceder como anónimo"
+    anonymousBtn.onclick = function() {
+        showAdditionalInfo();
+    }
+
+    // Evento para el botón de inicio de sesión en el formulario
+    document.getElementById("submitLogin").onclick = function() {
+        loginModal.style.display = "none";
+        showAdditionalInfo();
+        return false; // Previene el envío del formulario
+    }
+
+    // Evento para el botón de registro en el formulario
+    document.getElementById("submitRegister").onclick = function() {
+        registerModal.style.display = "none";
+        showAdditionalInfo();
+        return false; // Previene el envío del formulario
     }
 });
